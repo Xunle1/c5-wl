@@ -1,0 +1,1 @@
+update test set Score=Score+5 where Age < 20;

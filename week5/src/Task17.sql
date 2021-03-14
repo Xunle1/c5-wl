@@ -1,0 +1,1 @@
+delete from test where Age >= 21 and Score >= 500;

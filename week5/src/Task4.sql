@@ -1,0 +1,1 @@
+alter table choosebb add Bb4 varchar(20) not null default'';
