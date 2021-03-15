@@ -1,0 +1,1 @@
+select student.SNO,student.Name,choose.CourseID ,choose.Score from student,choose where student.SNO = choose.SNO;

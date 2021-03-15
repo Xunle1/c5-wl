@@ -1,0 +1,1 @@
+select * from student s where exists(select * from student t where name like "张三" and s.College = t.College);

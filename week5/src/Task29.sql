@@ -1,0 +1,1 @@
+select CourseID,CourseName from course where CourseBeforeID is null;
