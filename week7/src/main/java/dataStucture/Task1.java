@@ -34,7 +34,7 @@ public class Task1 {
             stack.push(nums2[i]);
 //            System.out.println("比" + stack.peek() + "小的：" + stack.push(nums2[i]) + "入栈");
         }
-//        System.out.println(stack);
+        System.out.println(stack);
         int[] nums3 = new int[nums1.length];
         for (int i = 0; i < nums1.length; i++) {
             if (map.get(nums1[i]) == null){

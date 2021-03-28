@@ -11,7 +11,7 @@ public class Task2 {
     @Test
     public void testSolution() {
         int[] pushed = {1,2,3,4,5};
-        int[] popped = {4,3,2,1,5};
+        int[] popped = {4,5,3,2,1};
         System.out.println(solution(pushed,popped));
     }
 
@@ -25,13 +25,17 @@ public class Task2 {
         int i = 0;
         int j = 0;
 
-        while (!stack.isEmpty() && i < len1) {
-            //栈不为空且pushed数组没有遍历完，
+        while (i < len1) {
+            //如果pushed[i]不等于popped[j]，则pushed[i]入栈，如果等于则代表该出栈
+            stack.push(pushed[i]);
             while (pushed[i] != popped[j]) {
-                stack.push(pushed[i++]);
+                i++;
+                stack.push(pushed[i]);
             }
+
             while (!stack.isEmpty() && stack.peek() == popped[j]) {
                 stack.pop();
+                i++;
                 j++;
             }
         }

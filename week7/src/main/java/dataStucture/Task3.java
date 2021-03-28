@@ -11,7 +11,7 @@ public class Task3 {
 
     @Test
     public void testSolution() {
-        int[] nums = {1,2,3,4,2,};
+        int[] nums = {1,2,3,4,2,3,1};
         System.out.println(solution(nums));
     }
 

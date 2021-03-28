@@ -12,7 +12,7 @@ public class Task4 {
 
     @Test
     public void testSolution() {
-        int[] nums = {1,3,-1,-3,5,3,6,7};
+        int[] nums = {1,3,-1,-3,5,3,6,7,3};
         int k = 3;
         System.out.println(solution(nums,k));
         System.out.println(solution2(nums,k));

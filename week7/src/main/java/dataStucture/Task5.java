@@ -23,9 +23,10 @@ public class Task5 {
              if (nums[right] == 1) {
                  //如果nums[right]==1 窗口扩大
                  right++;
+                 //修改max值
                  max = (right - left) > max ? (right - left) : max;
              } else {
-                 //否则nums
+                 //否则left和right跳过该索引
                  right++;
                  left = right;
              }
