@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Date;
 import java.util.List;
+import java.util.Properties;
 
 /**
  * @author xunle
@@ -75,5 +76,6 @@ public class AccountDaoTest {
         account.setMoney(700);
         account.setUpdatetime(new Date());
         Integer count = accountDao.updateByPrimaryKey(account);
+        System.out.println(count);
     }
 }

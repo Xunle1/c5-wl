@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///cas?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+
+mybatis:
+  type-aliases-package: com.xunle.boot.domain
+  mapper-locations: classpath:mybatis/mapper/*Mapper.xml
