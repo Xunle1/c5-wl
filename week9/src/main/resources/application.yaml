@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///cas?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+
+mybatis:
+  type-aliases-package: com.xunle.pojo
+  mapper-locations: mapper/*Mapper.xml
+
+server:
+  port: 80

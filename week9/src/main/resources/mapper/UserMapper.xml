@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xunle.dao.UserMapper">
+    <select id="findAll" resultType="user">
+        select * from cas.user;
+    </select>
+    <insert id="register" parameterType="user">
+        insert into cas.user (username, mobile, password, name, birthday, sex, email, createtime, updatetime)
+        values (#{username}, #{mobile}, #{password}, #{name}, #{birthday}, #{sex}, #{email}, #{createtime}, #{updatetime});
+    </insert>
+    <select id="login" resultType="Boolean">
+        <![CDATA[ select count(id) from cas.user where mobile = #{mobile} and password = #{password} ]]>
+    </select>
+    <select id="findById" parameterType="integer" resultType="user">
+        select * from cas.user where id = #{id}
+    </select>
+</mapper>
